@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // core react package - for us to develop our UI with comp
+import ReactDOM from 'react-dom'; // render the UI in the Div with id 'root'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
