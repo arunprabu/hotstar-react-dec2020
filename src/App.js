@@ -1,8 +1,13 @@
 import './App.css'; // CSS
 import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header';
+import Subscription from './components/Subscription';
 import ChannelList from './containers/ChannelList';
+import ContactForm from './containers/ContactForm';
+import LifeCycleDemo from './containers/LifeCycleDemo';
+import MyProfile from './containers/MyProfile';
 import ProgramList from './containers/ProgramList';
+import TrendingShows from './containers/TrendingShows';
 
 // App Component - Main Component / Root Component
 function App() {
@@ -17,6 +22,16 @@ function App() {
           <ProgramList />
           <hr />
           <ChannelList />
+          <hr />
+          <TrendingShows />
+          <hr />
+          <Subscription />
+          <hr />
+          <MyProfile />
+          <hr />
+          <ContactForm />
+          <hr/>
+          <LifeCycleDemo feature='LifeCycle Of React JS Comp'/>
         </div>
       </div>
 

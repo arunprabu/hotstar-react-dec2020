@@ -46,6 +46,22 @@ class ChannelList extends Component {
     });
   }
 
+  handleAddToFav = () => {
+    this.setState({
+      tvChannelList: [
+        {
+          name: 'Start Sports [Added]', category: 'Sports', desc: '#1 Sports Channel', imageURL: 'https://via.placeholder.com/280x160'
+        },
+        {
+          name: 'Discovery', category: 'Infotainment', desc: '#1 Infotainment Channel', imageURL: 'https://via.placeholder.com/280x160'
+        },
+        {
+          name: 'NatGeo', category: 'Infotainment', desc: 'Best Infotainment Channel', imageURL: 'https://via.placeholder.com/280x160'
+        }
+      ]
+    });
+  }
+
   render() {
     console.log('Inside Render');
 
@@ -54,10 +70,11 @@ class ChannelList extends Component {
         <h2>Channel List | States Demo</h2>
         <p>Total TV Channels: {this.state.totalTVChannels}</p>
         <div className='row'>
-          <Channel
+          <Channel 
             name={this.state.tvChannelList[0].name}
             category={this.state.tvChannelList[0].category}
-            imagePath={this.state.tvChannelList[0].imageURL}>
+            imagePath={this.state.tvChannelList[0].imageURL} 
+            addToFav={this.handleAddToFav}>
             {this.state.tvChannelList[0].desc}
           </Channel>
 
