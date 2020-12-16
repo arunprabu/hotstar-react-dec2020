@@ -8,6 +8,7 @@ import LifeCycleDemo from './containers/LifeCycleDemo';
 import MyProfile from './containers/MyProfile';
 import ProgramList from './containers/ProgramList';
 import TrendingShows from './containers/TrendingShows';
+import WithLastLogin from './hoc/WithLastLogin';
 
 // App Component - Main Component / Root Component
 function App() {
@@ -32,6 +33,21 @@ function App() {
           <ContactForm />
           <hr/>
           <LifeCycleDemo feature='LifeCycle Of React JS Comp'/>
+          <hr />
+
+          <h2>Higher Order Component - HOC</h2>
+          <WithLastLogin>
+            Last Login: 15/Dec/2020
+          </WithLastLogin> 
+          <WithLastLogin>
+            <div>
+             Demo of LastLogin HOC
+            </div>
+            <div>
+              This tag is also returned without wrapping parent tag
+            </div>
+          </WithLastLogin> 
+
         </div>
       </div>
 
